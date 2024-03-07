@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interno</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- ICONS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER css  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/input.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- header  -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex items-center justify-between h-full">
+        <a href="#"><img src="assets/logo.svg" alt="logo" /></a>
+        <!-- nav  -->
+        <nav>
+          <!-- nav mobile trigger  -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger-btn">
+            <i class="ri-menu-4-line text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav__menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- page wrapper  -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- grid image  -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+
+      <!-- hero section  -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+      >
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1 class="h1">Let Your Home Be Unique</h1>
+            <p class="mb-8">
+              There are many variations of the passages of lorem Ipsum from
+              available,variations of the passages
+            </p>
+            <button class="btn btn-primary">
+              Get free estimation
+              <i class="ri-arrow-right-line text-accent"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- steps  -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- grid items  -->
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
+            <!-- step--1  -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-compasses-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Project Planning</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center gap-2 font-medium"
+                >Read more
+                <i class="ri-arrow-right-fill text-accent"></i>
+              </a>
+            </div>
+            <!-- step--2  -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-magic-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Gaining Materials</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center gap-2 font-medium"
+                >Read more
+                <i class="ri-arrow-right-fill text-accent"></i>
+              </a>
+            </div>
+            <!-- step--3  -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-tools-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Project Execution</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center gap-2 font-medium"
+                >Read more
+                <i class="ri-arrow-right-fill text-accent"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about  -->
+      <section class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <div
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
+          >
+            <div
+              class="max-w-md xl:max-w-[408px] flex-1 order-2 xl:order-none flex flex-col items-center xl:items-start gap-8"
+            >
+              <h1 class="h2 mb-8">
+                We Create The Art Of Stylish Living Stylishly
+              </h1>
+              <p class="">
+                It is a long established fact that a reader will be distracted
+                by the of readable content of a page when lookings at its
+                layouts the points of using that it has a more-or-less normal.
+              </p>
+              <div class="flex items-center justify-center gap-4 xl:mb-4 mb-0">
+                <div
+                  class="text-accent bg-accent/15 w-[93px] h-[93px] rounded-full flex items-center justify-center text-4xl"
+                >
+                  <i class="ri-phone-fill"></i>
+                </div>
+                <div class="text-left">
+                  <div class="text-2xl font-bold">0987 654 321</div>
+                  <p>Call Us Anytime</p>
+                </div>
+              </div>
+              <button class="btn btn-primary">
+                Get free estimation
+                <i class="ri-arrow-right-line text-accent"></i>
+              </button>
+            </div>
+            <div
+              class="about__img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
+            >
+              <img src="assets/about/img.png" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials  -->
+      <section class="testimonials mt-[80px] sl:mt-[200px] relative z-20">
+        <div
+          class="testimonials__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
+        >
+          <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+            <h2 class="testimonial__title h2 mb-9 text-center">
+              What clients say
+            </h2>
+            <!-- slider  -->
+            <div class="w-full">
+              <div class="testimonial__slider swiper h-[400px]">
+                <div class="swiper-wrapper">
+                  <!-- sliders 1 -->
+                  <div class="swiper-slide">
+                    <!-- item  -->
+                    <div
+                      class="testimonials__item w-full max-w-[450px] bg-white rounded-[30px] flex flex-col items-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/01.png"
+                          alt="testimonials"
+                        />
+                        <div>
+                          <h3 class="h3">Mattasha Mith</h3>
+                          <div>Greenville USA</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Distinctio, delectus.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- sliders 2 -->
+                  <div class="swiper-slide">
+                    <!-- item  -->
+                    <div
+                      class="testimonials__item w-full max-w-[450px] bg-white rounded-[30px] flex flex-col items-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/02.png"
+                          alt="testimonials"
+                        />
+                        <div>
+                          <h3 class="h3">Jessica White</h3>
+                          <div>Oak Ridge, USA</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Distinctio, delectus.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- sliders 3 -->
+                  <div class="swiper-slide">
+                    <!-- item  -->
+                    <div
+                      class="testimonials__item w-full max-w-[450px] bg-white rounded-[30px] flex flex-col items-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/03.png"
+                          alt="testimonials"
+                        />
+                        <div>
+                          <h3>Mike Davis</h3>
+                          <div>Berlin, Germany</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Distinctio, delectus.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- sliders 4 -->
+                  <div class="swiper-slide">
+                    <!-- item  -->
+                    <div
+                      class="testimonials__item w-full max-w-[450px] bg-white rounded-[30px] flex flex-col items-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/04.png"
+                          alt="testimonials"
+                        />
+                        <div>
+                          <h3 class="h3">Olivia Wilson</h3>
+                          <div>Blue Ridge, France</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Distinctio, delectus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- swiper-pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- brands   -->
+      <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col xl:flex-row items-center justify-between flex-wrap gap-12"
+          >
+            <img class="brands__img" src="assets/brands/01.svg" alt="brand" />
+            <img class="brands__img" src="assets/brands/02.svg" alt="brand" />
+            <img class="brands__img" src="assets/brands/03.svg" alt="brand" />
+            <img class="brands__img" src="assets/brands/04.svg" alt="brand" />
+            <img class="brands__img" src="assets/brands/05.svg" alt="brand" />
+          </div>
+        </div>
+      </section>
+
+      <!-- work  -->
+      <section class="work mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <!-- text  -->
+          <div class="text-center mb-24">
+            <h2 class="work__title h2 mb-4">Follow Our Projects</h2>
+            <p class="work__subtitle max-w-3xl mx-auto">
+              It is a long established fact that a reader will be distracted by
+              the of readable content of page lookings at its layouts points.
+            </p>
+          </div>
+          <!-- grid  -->
+          <div
+            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- item -1 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img src="assets/work/01.png" class="mb-6" alt="work" />
+              <div class="flex items-center justify-between w-full">
+                <div>
+                  <h3 class="h3">Modern Kitchen</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item -2 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img src="assets/work/02.png" class="mb-6" alt="work" />
+              <div class="flex items-center justify-between w-full">
+                <div>
+                  <h3 class="h3">Modern Kitchen</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item -3 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img src="assets/work/03.png" class="mb-6" alt="work" />
+              <div class="flex items-center justify-between w-full">
+                <div>
+                  <h3 class="h3">Modern Kitchen</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item -4 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img src="assets/work/04.png" class="mb-6" alt="work" />
+              <div class="flex items-center justify-between w-full">
+                <div>
+                  <h3 class="h3">Modern Kitchen</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- scroll reveal js  -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
