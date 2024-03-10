@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/input.css" />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 scroll-smooth">
     <!-- header  -->
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div class="container mx-auto flex items-center justify-between h-full">
@@ -37,12 +37,12 @@
             class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav__menu"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -58,7 +58,7 @@
       <!-- hero section  -->
       <section
         class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
-      >
+      id="home">
         <div
           class="container mx-auto h-full flex items-center justify-center xl:justify-start"
         >
@@ -79,7 +79,7 @@
       </section>
 
       <!-- steps  -->
-      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20" >
         <div class="container mx-auto">
           <!-- grid items  -->
           <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
@@ -139,13 +139,13 @@
       </section>
 
       <!-- about  -->
-      <section class="about mt-[80px] xl:mt-[200px] relative z-20">
+      <section class="about mt-[80px] xl:mt-[200px] relative z-20"id="about">
         <div class="container mx-auto xl:px-0">
           <div
             class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
           >
             <div
-              class="max-w-md xl:max-w-[408px] flex-1 order-2 xl:order-none flex flex-col items-center xl:items-start gap-8"
+              class="about__text max-w-md xl:max-w-[408px] flex-1 order-2 xl:order-none flex flex-col items-center xl:items-start gap-8"
             >
               <h1 class="h2 mb-8">
                 We Create The Art Of Stylish Living Stylishly
@@ -181,7 +181,7 @@
       </section>
 
       <!-- testimonials  -->
-      <section class="testimonials mt-[80px] sl:mt-[200px] relative z-20">
+      <section class="testimonials mt-[80px] sl:mt-[200px] relative z-20" id="testimonial" >
         <div
           class="testimonials__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
         >
@@ -300,17 +300,17 @@
           <div
             class="flex flex-col xl:flex-row items-center justify-between flex-wrap gap-12"
           >
-            <img class="brands__img" src="assets/brands/01.svg" alt="brand" />
-            <img class="brands__img" src="assets/brands/02.svg" alt="brand" />
-            <img class="brands__img" src="assets/brands/03.svg" alt="brand" />
-            <img class="brands__img" src="assets/brands/04.svg" alt="brand" />
-            <img class="brands__img" src="assets/brands/05.svg" alt="brand" />
+            <img class="brand__img" src="assets/brands/01.svg" alt="brand" />
+            <img class="brand__img" src="assets/brands/02.svg" alt="brand" />
+            <img class="brand__img" src="assets/brands/03.svg" alt="brand" />
+            <img class="brand__img" src="assets/brands/04.svg" alt="brand" />
+            <img class="brand__img" src="assets/brands/05.svg" alt="brand" />
           </div>
         </div>
       </section>
 
       <!-- work  -->
-      <section class="work mt-[80px] xl:mt-[150px] relative z-20">
+      <section class="work mt-[80px] xl:mt-[150px] relative z-20" id="work">
         <div class="container mx-auto xl:px-0">
           <!-- text  -->
           <div class="text-center mb-24">
@@ -423,7 +423,7 @@
       </section>
 
       <!-- news  -->
-      <section class="news mt-[80px] xl:mt-[150px] relative z-20">
+      <section class="news mt-[80px] xl:mt-[150px] relative z-20" id="news">
         <div class="container mx-auto">
           <!-- text  -->
           <div class="text-center mb-24">
@@ -493,7 +493,7 @@
       </section>
 
       <!-- contact  -->
-      <section class="contact mt-[80px] xl:mt-[150px] relative z-20">
+      <section class="contact mt-[80px] xl:mt-[150px] relative z-20" id="contact">
         <div
           class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
         >
@@ -513,7 +513,7 @@
       <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto px-0 xl:mb-[150px]">
           <div class="flex flex-col xl:flex-row xl:gap-[100px]">
-            <div class="footer__items max-w-[400px] mx-auto w-full">
+            <div class="footer__item max-w-[400px] mx-auto w-full">
               <!-- footer logo  -->
               <div
                 class="flex flex-col xl:items-start items-center xl:justify-start sm:justify-center xl:text-start text-center mb-8"
